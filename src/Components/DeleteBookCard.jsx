@@ -19,7 +19,7 @@ function DeleteBookCard() {
   function deleteBook(e) {
     // e.preventDefault();
     axios.post("https://ak-awer.vercel.app/Delete", { book });
-    navigate("/DeleteBook");
+    navigate("/Books");
   }
   return (
     <>
