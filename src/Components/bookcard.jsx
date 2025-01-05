@@ -7,10 +7,9 @@ function Bookscard() {
   const [bookData,setBookData]= useState([]);
 
 useEffect(()=>{
-    axios.get("http://localhost:8000/book")
-  .then((res)=>{
-    setBookData(res.data);
-  })
+    axios.get("https://ak-awer.vercel.app/book").then((res) => {
+      setBookData(res.data);
+    });
 
 },[])
 

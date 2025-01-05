@@ -14,7 +14,11 @@ function Signup() {
   function handlersubmit(e) {
     e.preventDefault();
     console.log(fullname, email, password);
-    axios.post("http://localhost:8000/user", { fullname, email, password });
+    axios.post("https://ak-awer.vercel.app/user", {
+      fullname,
+      email,
+      password,
+    });
     navigate("/login");
   }
 

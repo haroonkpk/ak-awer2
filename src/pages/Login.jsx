@@ -13,7 +13,7 @@ function Login() {
   function submitHandler(e) {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/login", {
+      .post("https://ak-awer.vercel.app/login", {
         email,
         password,
       })

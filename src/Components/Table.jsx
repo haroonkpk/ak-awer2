@@ -8,15 +8,15 @@ function AuthorTable() {
 
   useEffect(()=>{
 
-    axios.get('http://localhost:8000/user')
-    .then((res)=>{ 
-      const adminUser = res.data.filter((user)=>user.role=="ADMIN")
-      setAuthorData(adminUser)
-      console.log(res);
-      
-    })
-    
-    .catch((res)=> console.log(res.data))
+    axios
+      .get("https://ak-awer.vercel.app/user")
+      .then((res) => {
+        const adminUser = res.data.filter((user) => user.role == "ADMIN");
+        setAuthorData(adminUser);
+        console.log(res);
+      })
+
+      .catch((res) => console.log(res.data));
   },[])
   console.log(AuthorData)
   

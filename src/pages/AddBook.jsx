@@ -15,13 +15,13 @@ function AddBook() {
 
   function submithandler(e){
     e.preventDefault(); 
-      axios.post("http://localhost:8000/book",{
-      title,
-      description,
-      authorId,
-      price,
-      img
-    });
+      axios.post("https://ak-awer.vercel.app/book", {
+        title,
+        description,
+        authorId,
+        price,
+        img,
+      });
     navigate("/Books")
   }
  

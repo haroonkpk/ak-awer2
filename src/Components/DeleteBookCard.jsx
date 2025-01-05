@@ -10,7 +10,7 @@ function DeleteBookCard() {
   const [bookData, setBookData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/book").then((res) => {
+    axios.get("https://ak-awer.vercel.app/book").then((res) => {
       setBookData(res.data);
     });
     setBook();
@@ -18,7 +18,7 @@ function DeleteBookCard() {
 
   function deleteBook(e) {
     // e.preventDefault();
-    axios.post("http://localhost:8000/Delete",{book})
+    axios.post("https://ak-awer.vercel.app/Delete", { book });
     navigate("/DeleteBook");
   }
   return (
