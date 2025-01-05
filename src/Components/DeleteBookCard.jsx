@@ -34,7 +34,7 @@ function DeleteBookCard() {
         {bookData.map((book) => {
           function id (){
             setBook(book._id)
-                axios.post("http://localhost:8000/Delete", { book });
+                axios.post("https://ak-awer.vercel.app/Delete", { book });
           }
           
           return (
